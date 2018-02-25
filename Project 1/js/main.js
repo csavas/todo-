@@ -1,6 +1,4 @@
 // Create a "close" button and append it to each list item
-const fs = require("./FileSaver.js-master");
-var data = '{"robo":[{"minute": "urgency"}]}';
 var myNodelist = document.getElementsByTagName("LI");
 var i;
 for (i = 0; i < myNodelist.length; i++) {
@@ -106,16 +104,6 @@ function newElement() {
     }
   }
   
-  function fileDownload(data) {
-	fs.writeFile("data.txt", data ,"utf-8", (err) => {
-	  if (err) {throw err;}
-  })  
-	  
-  }
-  
-  var data = data['Robo'].push("minute": myInput3)
-  var data = data['Robo'].push("urgency": myInput4)
-  fileDownload(data);
   
   
 }
