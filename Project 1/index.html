@@ -1,0 +1,75 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/normalize.min.css">
+        <link rel="stylesheet" href="css/main.css">
+        <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+    </head>
+    <body>
+		<div id ="container">
+			<main>
+				<section id="main">
+					<div id="hm">
+						<H1>ToDo+</H1>
+					</div>
+					<article>
+							<p>Welcome to <strong>ToDo+</strong>! For each task, enter the <em>Task Name</em>, how many days until it is due, the amount of minutes you need to complete the task,
+							and the <em>Urgency</em> of the task. The urgency is on a scale from 1-3 with 1 being the most urgent.</p>
+							<p>Next, press "Add to Schedule" and continue adding tasks the same as the first. You will notice a chart on the right adding your tasks as you go. Once you are done adding tasks, press the button under the chart.</p>
+							<p>We will organize your chart based on when it is due and the urgency of it.</p> 
+							<p>Finally, start working! You will see the arduino counting down for the first thing that you need to do. Good luck!</p>
+							<div id="myDIV">
+								<h2 style="margin:5px">Add a Task</h2>
+								<table>
+									<tr>
+										<td>Task Name: </td>
+										<td><input type="text" id="myInput" placeholder="Task name..."></td>
+									<tr>
+									<tr>
+										<td>Days Till Due: </td>
+										<td><input type="text" id="myInput2" placeholder="Day #.."></td>
+									<tr>
+									<tr>
+										<td>Minutes Estimated to Complete Task: </td>
+										<td><input type="text" id="myInput3" placeholder="Minutes..."></td>
+									<tr>
+									<tr>
+										<td>Urgency: </td>
+										<td><input type="text" id="myInput4" placeholder="Rating 1-3"></td>
+									<tr>
+								</table>
+									<span onclick="newElement()" class="addBtn">Add</span>
+							</div>
+							<div id ="holder"></div>
+					</article>
+				</section>
+
+				<section id ="right">
+					<h2>Completed Schedule</h2>
+					<ul id="myUL">
+						<li>Example</li>
+					<!--<li class="checked">Pay bills</li>
+					<li>Meet George</li>
+					<li>Buy eggs</li>
+					<li>Read a book</li>
+					<li>Organize office</li> -->
+					</ul>
+				</section>
+				<div class="vl"></div>
+			</main>
+			<div class = "clearfix"></div>
+			<footer>
+			</footer>
+		</div>
+
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
+
+        <script src="js/main.js"></script>
+    </body>
+</html>
